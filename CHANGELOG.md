@@ -46,6 +46,52 @@ release, and package publishing.
 
 * support cjs and esm both by tshy ([#1](https://github.com/eggjs/compressible/issues/1)) ([6d0d7cc](https://github.com/eggjs/compressible/commit/6d0d7ccfc75a00d8a98651fbd930fccba0b11454))
 
+## [3.0.0](https://github.com/eggjs/compressible/compare/v2.0.18...v3.0.0) (2025-03-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop Node.js < 18.19.0 support
+
+part of https://github.com/eggjs/egg/issues/3644
+
+https://github.com/eggjs/egg/issues/5257
+
+- change mime-db to 1.52.0
+
+<!-- This is an auto-generated comment: release notes by coderabbit.ai
+-->
+
+## Summary by CodeRabbit
+
+- **New Features**
+- Rebranded the package as “@eggjs/compressible” with enhanced
+TypeScript support, updated module exports, and improved type
+definitions.
+  
+- **Documentation**
+- Revised the README with new badges, installation instructions, usage
+examples, and contributor information.
+  - Updated LICENSE with a new copyright entry.
+  
+- **Refactor**
+- Migrated the core compressibility functionality from JavaScript to a
+streamlined TypeScript implementation.
+  
+- **Tests**
+- Added comprehensive tests to ensure robust handling of various MIME
+type inputs.
+  
+- **Chores**
+- Improved development tooling and updated CI workflows for build,
+release, and package publishing.
+
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->
+
+### Features
+
+* support cjs and esm both by tshy ([#1](https://github.com/eggjs/compressible/issues/1)) ([6d0d7cc](https://github.com/eggjs/compressible/commit/6d0d7ccfc75a00d8a98651fbd930fccba0b11454))
+
 unreleased
 ==========
 

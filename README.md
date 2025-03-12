@@ -1,23 +1,37 @@
-# compressible
+# @eggjs/compressible
 
-[![NPM Version][npm-version-image]][npm-url]
-[![NPM Downloads][npm-downloads-image]][npm-url]
-[![Node.js Version][node-version-image]][node-version-url]
-[![Build Status][ci-image]][ci-url]
-[![Test Coverage][coveralls-image]][coveralls-url]
+[![NPM version][npm-image]][npm-url]
+[![Node.js CI](https://github.com/eggjs/compressible/actions/workflows/nodejs.yml/badge.svg)](https://github.com/eggjs/compressible/actions/workflows/nodejs.yml)
+[![Test coverage][codecov-image]][codecov-url]
+[![Known Vulnerabilities][snyk-image]][snyk-url]
+[![npm download][download-image]][download-url]
+[![Node.js Version](https://img.shields.io/node/v/@eggjs/compressible.svg?style=flat)](https://nodejs.org/en/download/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/eggjs/compressible)
+
+[npm-image]: https://img.shields.io/npm/v/@eggjs/compressible.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@eggjs/compressible
+[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/compressible.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/eggjs/compressible?branch=master
+[snyk-image]: https://snyk.io/test/npm/@eggjs/compressible/badge.svg?style=flat-square
+[snyk-url]: https://snyk.io/test/npm/@eggjs/compressible
+[download-image]: https://img.shields.io/npm/dm/@eggjs/compressible.svg?style=flat-square
+[download-url]: https://npmjs.org/package/@eggjs/compressible
 
 Compressible `Content-Type` / `mime` checking.
+
+Forked [compressible](https://github.com/jshttp/compressible) for TypeScript and keep mime-db as same version as mime-types.
 
 ## Installation
 
 ```sh
-$ npm install compressible
+npm install @eggjs/compressible
 ```
 
 ## API
 
-```js
-var compressible = require('compressible')
+```ts
+import { compressible } from '@eggjs/compressible';
 ```
 
 ### compressible(type)
@@ -29,15 +43,15 @@ The MIME is looked up in the [`mime-db`](https://www.npmjs.com/package/mime-db) 
 if there is compressible information in the database entry, that is returned. Otherwise,
 this module will fallback to `true` for the following types:
 
-  * `text/*`
-  * `*/*+json`
-  * `*/*+text`
-  * `*/*+xml`
+* `text/*`
+* `*/*+json`
+* `*/*+text`
+* `*/*+xml`
 
 If this module is not sure if a type is specifically compressible or specifically
 uncompressible, `undefined` is returned.
 
-```js
+```ts
 compressible('text/html') // => true
 compressible('image/png') // => false
 ```
@@ -46,12 +60,8 @@ compressible('image/png') // => false
 
 [MIT](LICENSE)
 
-[ci-image]: https://badgen.net/github/checks/jshttp/compressible/master?label=ci
-[ci-url]: https://github.com/jshttp/compressible/actions?query=workflow%3Aci
-[coveralls-image]: https://badgen.net/coveralls/c/github/jshttp/compressible/master
-[coveralls-url]: https://coveralls.io/r/jshttp/compressible?branch=master
-[node-version-image]: https://badgen.net/npm/node/compressible
-[node-version-url]: https://nodejs.org/en/download
-[npm-downloads-image]: https://badgen.net/npm/dm/compressible
-[npm-url]: https://npmjs.org/package/compressible
-[npm-version-image]: https://badgen.net/npm/v/compressible
+## Contributors
+
+[![Contributors](https://contrib.rocks/image?repo=eggjs/compressible)](https://github.com/eggjs/compressible/graphs/contributors)
+
+Made with [contributors-img](https://contrib.rocks).

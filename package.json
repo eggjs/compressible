@@ -2,6 +2,9 @@
   "name": "@eggjs/compressible",
   "description": "Compressible Content-Type / mime checking. Forked for TypeScript and keep mime-db as same version as mime-types",
   "version": "3.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "contributors": [
     "Douglas Christopher Wilson <doug@somethingdoug.com>",
     "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
